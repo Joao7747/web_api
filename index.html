@@ -49,7 +49,7 @@
         
         console.log(cep);
 
-        let url = "http://viacep.com.br/ws/" + cep + "/json/";
+        let url = "https://viacep.com.br/ws/" + cep + "/json/";
         fetch(url)
             .then(req => req.json())
             .then(show => {console.log(show); fillTable(show);})
